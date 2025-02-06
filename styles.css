@@ -1,0 +1,8 @@
+:root {
+    --primary-color: #e60012;
+
+}
+
+nav {
+    background-color: var(--primary-color);
+}
