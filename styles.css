@@ -2,6 +2,8 @@
     --primary-color: #e60012;
     --secondary-color: #8c8c8c;
     --third-color: #ffffff;
+    --text-color: #000000;
+    --details-color: #C7C7C7;
     --type-fight: #d56723;
     --type-plant: #9bcc50;
     --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%); 
