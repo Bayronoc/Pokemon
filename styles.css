@@ -2,6 +2,15 @@
     --primary-color: #e60012;
     --secondary-color: #8c8c8c;
     --third-color: #ffffff;
+    --type-fight: #d56723;
+    --type-plant: #9bcc50;
+    --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%); 
+    --type-water: #4592c4;
+    --type-steel: #9eb7b8;
+    --titles: font
+    --sm: 12px;
+    --md: 16px;
+    --lg: 18px;
 }
 
 * {
@@ -13,9 +22,14 @@
 html {
     font-size: 62.5%;
 }
-.main_menu {
-    /* font-family: "Oswald", serif; */
+
+body {
     font-family: "Inter", serif;
+    /* font-family: "Oswald", serif; */
+    margin: 0;
+}
+
+.main_menu {
     font-weight: 700;
     font-size: 1.6rem;
     background-color: var(--primary-color);
