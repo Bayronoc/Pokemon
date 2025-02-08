@@ -32,9 +32,10 @@ body {
 .main-menu {
     background-color: var(--primary-color);
     height: auto;
-    width: 100vw;
+    width: auto;
     font-weight: 700;
     font-size: var(--lg);
+    border-radius: 0px 0px 10px 10px;
 }
 
 .logo {
@@ -42,6 +43,32 @@ body {
     width: 50px;
 }
 
-.menu {
-    display: inline;
+.menu div {
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+    padding: 8px;
 }
+
+.menu ul {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1000px;
+}
+
+.menu ul > li {
+    display: inline;
+    margin-right: 14px;
+    
+}
+
+.menu ul > li a {
+    display: inline;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.menu ul > li a:hover {
+    color: var(--text-color);
+}
+
