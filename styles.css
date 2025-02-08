@@ -28,3 +28,20 @@ body {
     font-family: "Inter", serif;
     /* font-family: "Oswald", serif; */
 }
+
+.main-menu {
+    background-color: var(--primary-color);
+    height: auto;
+    width: 100vw;
+    font-weight: 700;
+    font-size: var(--lg);
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    display: inline;
+}
