@@ -85,3 +85,20 @@ body {
     margin-bottom: 18px;
 }
 
+.images {
+    height: 300px;
+    width: 300px;
+}
+
+.card-presentation {
+    display: inline-block;
+    border: 1px 50% solid var(--text-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
+    -5px -5px 10px rgba(51, 27, 27, 0.171);
+}
+
+hr {
+    opacity: 30%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
