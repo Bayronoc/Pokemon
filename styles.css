@@ -26,7 +26,6 @@ html {
 
 body {
     font-family: "Inter", serif;
-    /* font-family: "Oswald", serif; */
 }
 
 .main-menu {
@@ -96,6 +95,31 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
     -5px -5px 10px rgba(51, 27, 27, 0.171);
+}
+
+.card-presentation p:nth-of-type(1) {
+    font-family: "Oswald", serif;
+    font-size: var(--md);
+    font-weight: 200;
+    margin: 10px;
+}
+
+.card-presentation p:nth-of-type(2) {
+    display: flex;
+    margin: 16px;
+    justify-content: center;
+    font-size: var(--lg);
+    font-weight: 500;
+}
+
+.card-presentation p:nth-of-type(3) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 14px;
+    border-radius: 10px;
+    font-family: "Oswald", serif;
+    font-weight: 300;
+    font-size: var(--sm);  
 }
 
 hr {
