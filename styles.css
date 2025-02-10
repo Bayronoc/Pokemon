@@ -92,6 +92,7 @@ body {
 
 .card-presentation {
     display: inline-block;
+    margin-top: 30px;
     border: 1px 50% solid var(--text-color);
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
@@ -130,4 +131,16 @@ body {
     font-family: "Oswald", serif;
     font-weight: 300;
     font-size: var(--sm);  
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    text-align: center;
+    padding: 10px;
+    font-size: var(--md);
+    font-weight: 600;
 }
