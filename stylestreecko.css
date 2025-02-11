@@ -123,20 +123,7 @@ body {
     font-family: "Oswald", serif;
     font-size: var(--sm);
     font-weight: 300;
-    background-color: var(--type-fight);
-    color: var(--third-color);
-    margin: 10px 5px;
-    padding: 4px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-}
-
-.types p:nth-of-type(2) {
-    font-family: "Oswald", serif;
-    font-size: var(--sm);
-    font-weight: 300;
-    background-color: var(--type-steel);
+    background-color: var(--type-plant);
     color: var(--text-color);
     margin: 10px 5px;
     padding: 4px;
