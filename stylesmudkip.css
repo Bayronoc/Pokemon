@@ -6,7 +6,7 @@
     --details-color: #C7C7C7;
     --type-fight: #d56723;
     --type-plant: #9bcc50;
-    --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%); 
+    --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
     --type-water: #4592c4;
     --type-steel: #9eb7b8;
     --sm: 12px;
@@ -136,7 +136,7 @@ body {
     font-family: "Oswald", serif;
     font-size: var(--sm);
     font-weight: 300;
-    background-color: var(--type-steel);
+    background: var(--type-ground);
     color: var(--text-color);
     margin: 10px 5px;
     padding: 4px;
