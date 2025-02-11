@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #e60012;
+    --secondary-color: #8c8c8c;
+    --third-color: #ffffff;
+    --text-color: #000000;
+    --details-color: #C7C7C7;
+    --type-fight: #d56723;
+    --type-plant: #9bcc50;
+    --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%); 
+    --type-water: #4592c4;
+    --type-steel: #9eb7b8;
+    --sm: 12px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", serif;
+}
+
+.main-menu {
+    background-color: var(--primary-color);
+    height: auto;
+    width: auto;
+    font-weight: 700;
+    font-size: var(--lg);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.menu div {
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.menu ul {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1000px;
+}
+
+.menu ul > li {
+    display: inline;
+    margin-right: 14px;
+    
+}
+
+.menu ul > li a {
+    display: inline;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.menu ul > li a:hover {
+    color: var(--text-color);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px;
+}
+
+.title {
+    font-size: var(--lg);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.images {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+}
+
+.card-presentation {
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px 50% solid var(--text-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
+    -5px -5px 10px rgba(51, 27, 27, 0.171);
+}
+
+.card-presentation p:nth-of-type(1) {
+    font-family: "Oswald", serif;
+    font-size: var(--md);
+    font-weight: 200;
+    margin: 10px;
+}
+
+.card-presentation p:nth-of-type(2) {
+    display: flex;
+    margin: 16px;
+    justify-content: center;
+    font-size: var(--lg);
+    font-weight: 500;
+}
+
+.card-presentation p:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: var(--sm);
+    font-style: italic;
+
+}
+
+.card-presentation p:nth-of-type(4) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 14px;
+    border-radius: 10px;
+    font-family: "Oswald", serif;
+    font-weight: 300;
+    font-size: var(--sm);  
+}
+
+.main-cards div {
+    display: inline-block;
+    justify-content: center;
+    margin: 32px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    text-align: center;
+    padding: 10px;
+    font-size: var(--md);
+    font-weight: 600;
+}
