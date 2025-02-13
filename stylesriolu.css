@@ -42,23 +42,21 @@ body {
     width: 50px;
 }
 
-.menu div {
-    display: inline-block;
-    margin-right: 100px;
-    vertical-align: middle;
-    padding: 8px;
+figure {
+    margin: 4px;
 }
 
-.menu ul {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 1000px;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .menu ul > li {
-    display: inline;
-    margin-right: 14px;
-    
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 24px;
+    vertical-align: middle;
 }
 
 .menu ul > li a {
