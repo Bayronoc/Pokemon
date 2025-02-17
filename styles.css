@@ -146,11 +146,11 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .icon {
     width: 20px;
     height: 20px;
-    margin-left: 8px;
     border-radius: 50%;
 }
