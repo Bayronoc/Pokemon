@@ -9,9 +9,9 @@
     --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
     --type-water: #4592c4;
     --type-steel: #9eb7b8;
-    --sm: 12px;
-    --md: 16px;
-    --lg: 18px;
+    --sm: 1.2rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
 }
 
 * {
