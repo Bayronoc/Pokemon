@@ -43,7 +43,9 @@ body {
 }
 
 figure {
+    display: flex;
     margin: 0.4rem;
+    justify-content: center;
 }
 
 .menu {
