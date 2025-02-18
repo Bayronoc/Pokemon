@@ -20,16 +20,30 @@
             </div>
 
             <ul>
-                <li><a href="./signup.html">Sign up</a></li>
-                <li><a href="./riolu.html">Log in</a></li>
+                <li><a href="./signup.html">Registrarse</a></li>
+                <li><a href="./">Ingresar</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-container">
-        <form action="">
-            
-        </form>
+        <div class="container-sign">
+            <form action="" class="main-form">
+                <label for="nickname">Nombre de usuario
+                    <input type="text" name="nickname" id="nickname" placeholder="Apodo" required>
+                </label>
+                
+                <label for="email">Correo electronico
+                    <input type="email" name="email" id="email" placeholder="Correo personal" required autocomplete="">
+                </label>
+                
+                <label for="password">Contraseña
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                </label>
+                
+                <input type="submit" value="Ingresar">
+            </form>
+        </div>
     </main>
 
     <footer class="footer">

@@ -72,64 +72,23 @@ figure {
 
 .main-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 2rem;
 }
 
-.title {
-    font-size: var(--lg);
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.images {
-    height: 18vw; /* Escalable según el viewport */
-    max-height: 30rem; /* Límite máximo */
-    width: auto;
-    margin: 0.5rem;
-}
-
-.card-presentation {
-    display: inline-block;
-    margin-top: 3rem;
+.container-sign {
+    display: flex;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
     -0.5rem -0.5rem 1rem rgba(51, 27, 27, 0.171);
 }
 
-.card-presentation p:nth-of-type(1) {
-    font-family: "Oswald", serif;
-    font-size: var(--md);
-    font-weight: 200;
-    margin: 1rem;
-}
-
-.card-presentation p:nth-of-type(2) {
+.main-form label{
     display: flex;
-    margin: 1.6rem;
-    justify-content: center;
-    font-size: var(--lg);
-    font-weight: 500;
-}
-
-.card-presentation p:nth-of-type(3) {
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    font-size: var(--sm);
-    font-style: italic;
-
-}
-
-.card-presentation p:nth-of-type(4) {
-    display: flex;
-    justify-content: flex-end;
-    margin: 1.4rem;
-    border-radius: 1rem;
-    font-family: "Oswald", serif;
-    font-weight: 300;
-    font-size: var(--sm);  
+    flex-direction: column;
+    margin-bottom: 1.6rem;
 }
 
 .footer {
