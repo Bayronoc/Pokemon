@@ -21,7 +21,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* 1rem = 10px para escalabilidad */
 }
 
 body {
@@ -31,32 +31,32 @@ body {
 .main-menu {
     background-color: var(--primary-color);
     height: auto;
-    width: auto;
+    width: 100%;
     font-weight: 700;
     font-size: var(--lg);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .logo {
-    height: 50px;
-    width: 50px;
+    height: 4rem;
+    width: auto;
 }
 
 figure {
-    margin: 4px;
+    margin: 0.4rem;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    padding: 0 2rem;
 }
 
-.menu ul > li {
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: 24px;
-    vertical-align: middle;
+.menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
 }
 
 .menu ul > li a {
@@ -72,40 +72,40 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 24px;
+    margin: 2rem;
 }
 
 .title {
     font-size: var(--lg);
     font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: 1.5rem;
 }
 
 .images {
-    height: 300px;
-    width: 300px;
-    margin: 5px;
+    height: 18vw; /* Escalable según el viewport */
+    max-height: 30rem; /* Límite máximo */
+    width: auto;
+    margin: 0.5rem;
 }
 
 .card-presentation {
     display: inline-block;
-    margin-top: 30px;
-    border: 1px 50% solid var(--text-color);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
-    -5px -5px 10px rgba(51, 27, 27, 0.171);
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
+    -0.5rem -0.5rem 1rem rgba(51, 27, 27, 0.171);
 }
 
 .card-presentation p:nth-of-type(1) {
     font-family: "Oswald", serif;
     font-size: var(--md);
     font-weight: 200;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .card-presentation p:nth-of-type(2) {
     display: flex;
-    margin: 16px;
+    margin: 1.6rem;
     justify-content: center;
     font-size: var(--lg);
     font-weight: 500;
@@ -123,8 +123,8 @@ figure {
 .card-presentation p:nth-of-type(4) {
     display: flex;
     justify-content: flex-end;
-    margin: 14px;
-    border-radius: 10px;
+    margin: 1.4rem;
+    border-radius: 1rem;
     font-family: "Oswald", serif;
     font-weight: 300;
     font-size: var(--sm);  
@@ -137,7 +137,7 @@ figure {
     background-color: var(--secondary-color);
     color: var(--third-color);
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
     font-size: var(--md);
     font-weight: 600;
 }
@@ -150,7 +150,7 @@ figure {
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    width: auto;
+    height: 2rem;
     border-radius: 50%;
 }
