@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesSignUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Pokemon</title>
+</head>
+<body>
+    <header class="main-menu">
+        <nav class="menu">
+            <div>
+                <figure>
+                    <a href="./index.html"><img src="./img/logo.png" alt="Logo principal de Pokemon" class="logo"></a>
+                </figure>
+            </div>
+
+            <ul>
+                <li><a href="./signup.html">Registrarse</a></li>
+                <li><a href="./login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+            <form action="" class="main-form">
+                <label for="email">Correo electronico
+                    <input type="email" name="email" id="email" placeholder="Correo personal" required autocomplete="">
+                </label>
+                
+                <label for="password">Contraseña
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                </label>
+                
+                <input type="submit" value="Ingresar" class="btn-success">
+                <p>¿Olvidaste la contraseña?<a href="./"> Haz click aqui</a></p>
+            </form>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>Creado por: @bayronoc</p>
+            <img src="./img/icon_gtihub.png" alt="Icono de github" class="icon">
+            <img src="./img/icon_youtube.png" alt="Icono de youtube" class="icon">
+        </div>
+    </footer>
+</body>
+</html>

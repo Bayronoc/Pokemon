@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #e60012;
+    --secondary-color: #8c8c8c;
+    --third-color: #ffffff;
+    --text-color: #000000;
+    --details-color: #C7C7C7;
+    --text-input: #F7F7F7;
+    --type-fight: #d56723;
+    --type-plant: #9bcc50;
+    --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%); 
+    --type-water: #4592c4;
+    --type-steel: #9eb7b8;
+    --sm: 1.2rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px para escalabilidad */
+}
+
+body {
+    font-family: "Inter", serif;
+}
+
+.main-menu {
+    background-color: var(--primary-color);
+    height: auto;
+    width: 100%;
+    font-weight: 700;
+    font-size: var(--lg);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+}
+
+figure {
+    display: flex;
+    margin: 0.4rem;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu ul > li a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.menu ul > li a:hover {
+    color: var(--text-color);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 9rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
+    -0.5rem -0.5rem 1rem rgba(51, 27, 27, 0.171);
+}
+
+.main-form label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+    gap: 1rem;
+    font-weight: 500;
+    font-size: var(--md);
+}
+
+.main-form label > input {
+    width: 30rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--text-input);
+}
+
+.btn-success {
+    margin-top: 3rem;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.btn-success:active {
+    background-color: var(--third-color);
+    color: var(--text-color);
+}
+
+.main-form p {
+    margin-top: 1.2rem;
+    font-size: var(--sm);
+    font-family: "Oswald", serif;
+    font-weight: 300;
+}
+
+.main-form p > a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.main-form p > a:hover {
+    color: var(--secondary-color);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: var(--md);
+    font-weight: 600;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    width: auto;
+    height: 2rem;
+    border-radius: 50%;
+}
