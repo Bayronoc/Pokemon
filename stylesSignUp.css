@@ -4,6 +4,7 @@
     --third-color: #ffffff;
     --text-color: #000000;
     --details-color: #C7C7C7;
+    --text-input: #F7F7F7;
     --type-fight: #d56723;
     --type-plant: #9bcc50;
     --type-ground: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%); 
@@ -77,9 +78,11 @@ figure {
     margin: 2rem;
 }
 
-.container-sign {
+.main-form {
     display: flex;
+    flex-direction: column;
     padding: 2rem;
+    margin-top: 9rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
     -0.5rem -0.5rem 1rem rgba(51, 27, 27, 0.171);
@@ -89,6 +92,46 @@ figure {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.6rem;
+    gap: 1rem;
+    font-weight: 500;
+    font-size: var(--md);
+}
+
+.main-form label > input {
+    width: 30rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--text-input);
+}
+
+.btn-success {
+    margin-top: 3rem;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.btn-success:active {
+    background-color: var(--third-color);
+    color: var(--text-color);
+}
+
+.main-form p {
+    margin-top: 1.2rem;
+    font-size: var(--sm);
+    font-family: "Oswald", serif;
+    font-weight: 300;
+}
+
+.main-form p > a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.main-form p > a:hover {
+    color: var(--secondary-color);
 }
 
 .footer {
