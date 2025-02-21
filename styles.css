@@ -90,8 +90,8 @@ figure {
 }
 
 .images {
-    height: 25rem; /* Escalable según el viewport */
-    max-height: 30rem; /* Límite máximo */
+    height: 25rem;
+    max-height: 30rem; 
     width: auto;
     margin: 0.5rem;
 }
@@ -148,6 +148,7 @@ figure {
     padding: 1rem;
     font-size: var(--md);
     font-weight: 600;
+    width: 100vw;
 }
 
 .footer div {

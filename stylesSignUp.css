@@ -27,12 +27,16 @@ html {
 
 body {
     font-family: "Inter", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
 }
 
 .main-menu {
     background-color: var(--primary-color);
     height: auto;
-    width: 100%;
+    width: 100vw;
     font-weight: 700;
     font-size: var(--lg);
     border-radius: 0 0 1rem 1rem;
@@ -73,6 +77,7 @@ figure {
 
 .main-container {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     margin: 2rem;
@@ -135,15 +140,13 @@ figure {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: var(--secondary-color);
     color: var(--third-color);
     text-align: center;
     padding: 1rem;
     font-size: var(--md);
     font-weight: 600;
+    width: 100vw;
 }
 
 .footer div {

@@ -26,12 +26,16 @@ html {
 
 body {
     font-family: "Inter", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
 }
 
 .main-menu {
     background-color: var(--primary-color);
     height: auto;
-    width: 100%;
+    width: 100vw;
     font-weight: 700;
     font-size: var(--lg);
     border-radius: 0 0 1rem 1rem;
@@ -70,6 +74,7 @@ figure {
 
 .main-container {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     margin: 2rem;
@@ -82,14 +87,15 @@ figure {
 }
 
 .images {
-    height: 18vw; /* Escalable según el viewport */
-    max-height: 30rem; /* Límite máximo */
+    height: 25rem;
+    max-height: 30rem; 
     width: auto;
     margin: 0.5rem;
 }
 
 .card-presentation {
     display: inline-block;
+    min-width: 20rem;
     margin-top: 3rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
@@ -149,15 +155,13 @@ figure {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: var(--secondary-color);
     color: var(--third-color);
     text-align: center;
     padding: 1rem;
     font-size: var(--md);
     font-weight: 600;
+    width: 100vw;
 }
 
 .footer div {
@@ -171,4 +175,32 @@ figure {
     width: auto;
     height: 2rem;
     border-radius: 50%;
+}
+
+/* Celulares (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .card-presentation {
+        display: inline-block;
+        min-width: 20rem;
+        margin-top: 3rem;
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
+        -0.5rem -0.5rem 1rem rgba(51, 27, 27, 0.171);
+    }
+
+    
 }
