@@ -216,3 +216,41 @@ figure {
         margin: 2.2rem;
     }
 }
+
+/* Responsive Design */
+
+/* Celulares (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .main-form {
+        width: 80%;
+    }
+
+    .main-form label > input {
+        width: auto;
+    }
+}
+
+/* Tablets (481px - 1024px) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .main-form {
+        width: 35%;
+    }
+
+    .main-form label > input {
+        width: auto;
+    }
+}

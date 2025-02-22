@@ -85,6 +85,7 @@ figure {
 .main-form {
     display: flex;
     flex-direction: column;
+    width: 22%;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
@@ -101,7 +102,7 @@ figure {
 }
 
 .main-form label > input {
-    width: 30rem;
+    width: auto;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
     border: none;
@@ -177,10 +178,23 @@ figure {
         gap: 2rem;
         list-style: none;
     }
-    
+
+    .main-form {
+        width: 80%;
+    }
+
+    .main-form label > input {
+        width: auto;
+    }
 }
 
 /* Tablets (481px - 1024px) */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
+    .main-form {
+        width: 35%;
+    }
 
+    .main-form label > input {
+        width: auto;
+    }
 }
