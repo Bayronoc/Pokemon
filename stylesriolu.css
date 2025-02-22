@@ -87,8 +87,8 @@ figure {
 }
 
 .images {
-    height: 18vw; /* Escalable según el viewport */
-    max-height: 30rem; /* Límite máximo */
+    height: 25rem;
+    max-height: 30rem; 
     width: auto;
     margin: 0.5rem;
 }
@@ -174,4 +174,61 @@ figure {
     width: auto;
     height: 2rem;
     border-radius: 50%;
+}
+
+/* Responsive Design */
+
+/* Celulares (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .card-presentation {
+        display: inline-block;
+        min-width: 20rem;
+        max-width: 30rem;
+        margin-top: 3rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3), 
+        -0.5rem -0.5rem 1rem rgba(51, 27, 27, 0.171);
+    }
+
+    .card-presentation p:nth-of-type(1) {
+        font-size: var(--lg);
+    }
+
+    .card-presentation p:nth-of-type(2) {
+        font-size: var(--lg);
+    }
+    
+}
+
+/* Tablets (481px - 1024px) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .card-presentation p:nth-of-type(1) {
+        font-size: var(--lg);
+    }
+
+    .card-presentation p:nth-of-type(2) {
+        font-size: var(--lg);
+    }
+
+    .main-cards > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2.2rem;
+    }
 }
