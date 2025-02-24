@@ -1,3 +1,4 @@
+/* Variables de Custom properties */
 :root {
     --primary-color: #e60012;
     --secondary-color: #8c8c8c;
@@ -15,16 +16,19 @@
     --lg: 1.8rem;
 }
 
+/* Evita errores de margenes y corrige el margen y padding de la página */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Tamaño de letra para toda la página ajustada para valores relativos */
 html {
     font-size: 62.5%; /* 1rem = 10px para escalabilidad */
 }
 
+/* Dirección de la página y su fuente de letra */
 body {
     font-family: "Inter", serif;
     display: flex;
@@ -33,6 +37,9 @@ body {
     margin: 0;
 }
 
+/* Menu */
+
+/* Contenedor del menu principal */
 .main-menu {
     background-color: var(--primary-color);
     height: auto;
@@ -42,17 +49,20 @@ body {
     border-radius: 0 0 1rem 1rem;
 }
 
+/* Logo del menu */
 .logo {
     height: 4rem;
     width: auto;
 }
 
+/* Contenedor de las imagenes (logo) */
 figure {
     display: flex;
     margin: 0.4rem;
     justify-content: center;
 }
 
+/* Contenido del menu */
 .menu {
     display: flex;
     justify-content: space-between;
@@ -61,7 +71,7 @@ figure {
 }
 
 .menu ul {
-    display: flex;
+    display: flex; /* Dirección del contenido del menu */
     gap: 2rem;
     list-style: none;
 }
@@ -75,6 +85,8 @@ figure {
     color: var(--text-color);
 }
 
+/* Contenido principal de la página */
+
 .main-container {
     display: flex;
     flex: 1;
@@ -82,6 +94,7 @@ figure {
     align-items: center;
 }
 
+/* Contenedor del formulario */
 .main-form {
     display: flex;
     flex-direction: column;
@@ -108,6 +121,7 @@ figure {
     background-color: var(--text-input);
 }
 
+/* Boton de ingreso */
 .btn-success {
     margin-top: 3rem;
     background-color: var(--primary-color);
@@ -120,6 +134,8 @@ figure {
     background-color: var(--third-color);
     color: var(--text-color);
 }
+
+/* Aviso en letra pequeña y enlace */
 
 .main-form p {
     margin-top: 1.2rem;
@@ -137,6 +153,7 @@ figure {
     color: var(--secondary-color);
 }
 
+/* Pie de página */
 .footer {
     background-color: var(--secondary-color);
     color: var(--third-color);
@@ -154,6 +171,7 @@ figure {
     gap: 1rem;
 }
 
+/* Ajustando los iconos del footer */
 .icon {
     width: auto;
     height: 2rem;

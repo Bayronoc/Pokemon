@@ -1,3 +1,4 @@
+/* Variables de Custom properties */
 :root {
     --primary-color: #e60012;
     --secondary-color: #8c8c8c;
@@ -14,16 +15,19 @@
     --lg: 1.8rem;
 }
 
+/* Evita errores de margenes y corrige el margen y padding de la página */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Tamaño de letra para toda la página ajustada para valores relativos */
 html {
     font-size: 62.5%; /* 1rem = 10px para escalabilidad */
 }
 
+/* Dirección de la página y su fuente de letra */
 body {
     font-family: "Inter", serif;
     display: flex;
@@ -32,6 +36,9 @@ body {
     margin: 0;
 }
 
+/* Menu */
+
+/* Contenedor del menu principal */
 .main-menu {
     background-color: var(--primary-color);
     height: auto;
@@ -41,24 +48,27 @@ body {
     border-radius: 0 0 1rem 1rem;
 }
 
+/* Logo del menu */
 .logo {
     height: 4rem;
     width: auto;
 }
 
+/* Contenedor de las imagenes (logo) */
 figure {
     margin: 0.4rem;
 }
 
+/* Contenido del menu */
 .menu {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
 }
 
 .menu ul {
-    display: flex;
+    display: flex; /* Dirección del contenido del menu */
     gap: 2rem;
     list-style: none;
 }
@@ -71,6 +81,8 @@ figure {
 .menu ul > li a:hover {
     color: var(--text-color);
 }
+
+/* Contenido principal de la página */
 
 .main-container {
     display: flex;
@@ -86,6 +98,7 @@ figure {
     margin-bottom: 1.5rem;
 }
 
+/* Ajuste de imagenes para que sean responsive */
 .images {
     height: 25rem;
     max-height: 30rem; 
@@ -93,6 +106,7 @@ figure {
     margin: 0.5rem;
 }
 
+/* Ajustes del contenedor de las cartas */
 .card-presentation {
     display: inline-block;
     min-width: 20rem;
@@ -117,10 +131,13 @@ figure {
     font-weight: 500;
 }
 
+/* Ajustando la posición de los tipos */
 .types {
     display: inline-flex;
     align-items: center;
 }
+
+/* Color y tamaño para cada tipo */
 
 .types p:nth-of-type(1) {
     font-family: "Oswald", serif;
@@ -154,6 +171,7 @@ figure {
     margin: 3.2rem;
 }
 
+/* Pie de página */
 .footer {
     background-color: var(--secondary-color);
     color: var(--third-color);
@@ -171,6 +189,7 @@ figure {
     gap: 1rem;
 }
 
+/* Ajustando los iconos del footer */
 .icon {
     width: auto;
     height: 2rem;
